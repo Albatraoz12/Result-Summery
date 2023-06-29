@@ -12,10 +12,10 @@
   --cobalt-blue: hsl(234, 85%, 45%);
 
   /* Gradient Colors */
-  --light-slate-blue: #7857ff;
-  --light-royal-blue: #2e2be9;
-  --violet-blue: #4e21ca;
-  --persian-blue: #2421ca00;
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  --violet-blue: hsl(256, 72%, 46%);
+  --persian-blue: hsla(241, 72%, 46%, 0);
 
   /* Neutral colors */
   --white: hsl(0, 0%, 100%);
@@ -48,7 +48,18 @@
 }
 
 body {
+  min-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
   font-family: HankenGritesk, sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
 }
 
 /* Main styling */
@@ -56,11 +67,9 @@ body {
 .container {
   display: flex;
   align-items: center;
-  height: 50vh;
-  max-width: 70%;
-  margin: 3rem auto;
-  background-color: gray;
+  width: clamp(650px, 60%, 700px);
   border-radius: 2rem;
+  box-shadow: 5px 10px rgba(23, 18, 18, 0.036);
 }
 
 .result-container {
@@ -68,7 +77,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center;
+  flex: 2;
   gap: 1.5rem;
   border-radius: 2rem;
   height: 100%;
@@ -113,10 +122,38 @@ body {
 
 .result-container .grade .result-text {
   text-align: center;
-  width: 45%;
+  width: 55%;
   line-height: 1.2rem;
   margin: 0 auto;
   color: var(--light-lavender);
+}
+
+/*  */
+
+/* Summary styling */
+
+.summary-container {
+  flex: 3;
+  padding: 0 1.5rem;
+}
+
+.list {
+  list-style-type: none;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-item div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.icon {
+  height: 30px;
+  width: 30px;
 }
 
 /* Footer styling */
