@@ -4,6 +4,36 @@
   box-sizing: border-box;
 }
 
+:root {
+  --ligh-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+}
+
+/* Fonts */
+
+/* 500 */
+@font-face {
+  font-family: HankenGritesk;
+  src: url(../fonts/static/HankenGrotesk-Medium.ttf);
+  font-weight: 500;
+}
+
+/* 700 */
+@font-face {
+  font-family: HankenGritesk;
+  src: url(../fonts/static/HankenGrotesk-Bold.ttf);
+  font-weight: 700;
+}
+
+/* 700 */
+@font-face {
+  font-family: HankenGritesk;
+  src: url(../fonts/static/HankenGrotesk-ExtraBold.ttf);
+  font-weight: 800;
+}
+
 /* Footer styling */
 
 .attribution {
