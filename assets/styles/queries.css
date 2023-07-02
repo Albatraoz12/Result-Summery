@@ -1,0 +1,38 @@
+@media screen and (max-width: 1000px) {
+  main {
+    flex: 0;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .result-container {
+    border-radius: 0 0 2rem 2rem;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .result-container .score-container {
+    height: 150px;
+    width: 150px;
+    margin: 0;
+  }
+
+  .score-container h3 {
+    font-size: 2.5rem;
+  }
+
+  .summary-container {
+    width: 100%;
+    margin: 0.2rem auto;
+  }
+
+  .result-container .grade .result-text {
+    margin-top: 1rem;
+  }
+
+  .list {
+    margin: 0;
+  }
+}
